@@ -1,5 +1,5 @@
 # RCuda
-A repository containing Cuda files written with the purpose of letting R utilize the power of Cuda.
+A repository containing Cuda files written with the purpose of letting R utilize the power of Cuda. I am new to both C and Cuda C, so feel free to contribute or give feedback.
 
 All files are free to use, develop and redistrubute as long as proper credit is given. 
 
