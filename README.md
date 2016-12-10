@@ -8,8 +8,9 @@ nvcc -g -arch=sm_20 -I/usr/share/R/include/ --shared -Xcompiler -fPIC -o FILE.so
 
 where FILE is the name of the relevant file. "-I/usr/share/R/include/" points the compiler to the location of the R header files, which are nessecary for compilation. If these files are located elsewhere one should change that part of the compile statement.
 
-In order to load the files into R the following code should be run in R:
-
+Here an example of loading an running RCuda_exp on a vector containing the numbers 1 to 10:
 ```R
+setwd("Folder containing RCuda_exp.so")
 dyn.load("RCuda_exp.so")
+.Call("RCuda_exp", 1:10)
 ```
