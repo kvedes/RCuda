@@ -10,4 +10,6 @@ where FILE is the name of the relevant file. "-I/usr/share/R/include/" points th
 
 In order to load the files into R the following code should be run in R:
 
-[code] dyn.load("RCuda_exp.so") [\code]
+```R
+dyn.load("RCuda_exp.so")
+```
