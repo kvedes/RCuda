@@ -7,3 +7,7 @@ The files in the repository can be compiled in Ubuntu using the command:
 nvcc -g -arch=sm_20 -I/usr/share/R/include/ --shared -Xcompiler -fPIC -o FILE.so FILE.cu
 
 where FILE is the name of the relevant file. "-I/usr/share/R/include/" points the compiler to the location of the R header files, which are nessecary for compilation. If these files are located elsewhere one should change that part of the compile statement.
+
+In order to load the files into R the following code should be run in R:
+
+[code] dyn.load("RCuda_exp.so") [\code]
